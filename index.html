@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center">GC Agile Store</h1>
+        </div>
+        <div class="row">
+            <div class="card p-0 col-4">
+                <img src="https://cdn11.bigcommerce.com/s-n3nb5pav2e/images/stencil/original/products/1084/1169/81oxtq1wmkl._sl1500___84571.1661393716.jpg?c=2" />
+                <button class="card-footer border-0" onclick="AddItem('Drink', 0.99)">Drink $.99</button>
+            </div>
+            <div class="card p-0 col-4">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg/800px-Eq_it-na_pizza-margherita_sep2005_sml.jpg" />
+                <button class="card-footer border-0" onclick="AddItem('Pizza', 10.99)">Pizza $10.99</button>
+            </div>
+            <div class="card p-0 col-4">
+                <img src="https://static.onecms.io/wp-content/uploads/sites/43/2022/09/26/25473-the-perfect-basic-burger-ddmfs-4x3-1350-1.jpg" />
+                <button class="card-footer border-0" onclick="AddItem('Burger', 6.99)">Burger $6.99</button>
+            </div>
+            <div class="card p-0 col-4">
+                <img src="https://mccormick.widen.net/content/pf77axj6bx/original/classic_grilled_hot_dog_800x800.jpg" />
+                <button class="card-footer border-0" onclick="AddItem('Hot Dog', 2.99)">Hot Dog $2.99</button>
+            </div>
+            <div class="card p-0 col-4">
+                <img src="https://www.seriouseats.com/thmb/Il7mv9ZSDh7n0cZz3t3V-28ImkQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2018__04__20180309-french-fries-vicky-wasik-15-5a9844742c2446c7a7be9fbd41b6e27d.jpg" />
+                <button class="card-footer border-0" onclick="AddItem('Fries', 1.99)">Fries $1.99</button>
+            </div>
+        </div>
+
+        <p></p>
+
+        <button onclick="DisplayItems()">Print all Items</button>
+        <button onclick="Total()">Receipt</button>
+
+        <p></p>
+    
+        <div class="row">
+            <h1 class="text-center">Cart:</h1>
+        </div>
+        <div class="row">
+            <p class="status"></p>
+        </div>
+        <ul class="cart"></ul> 
+
+        <div class="row">
+            <p>Total: $<span class="total">0.00</span></p>
+        </div>
+        <div class="row">
+            <p>Tax: $<span class="tax">0.00</span></p>
+        </div>
+        <div class="row">
+            <p>Grand Total: $<span class="grandTotal">0.00</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
